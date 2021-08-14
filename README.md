@@ -33,3 +33,7 @@ Routes:
   * Put - /{id}
   * Post
   * Delete - /{id}
+# Schema
+![Schema](misc/Schema.png)
+# Model
+![Model](misc/Model.png)
