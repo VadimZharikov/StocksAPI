@@ -1,0 +1,16 @@
+﻿version: '3'
+services:
+  ms-sql-server:
+   image: mcr.microsoft.com/mssql/server:2019-latest
+   environment:
+    ACCEPT_EULA: "Y"
+    SA_PASSWORD: "test@123"
+    MSSQL_PI: Express
+   ports:
+    - 1433:1433
+  forex:
+   build: .
+   environment:
+    TZ: "Europe/Moscow"
+   ports:
+   - 5001:80
